@@ -33,15 +33,17 @@
 
             nomi.forEach((item) => {
                 const li = document.createElement("li");
-                li.textContent = nomi[i];
+                li.textContent = item;
                 lista.appendChild(li);
             });
         });
 
         const reset = document.getElementById("btn-reset");
         reset.addEventListener("click", function(){
-            
-        })
+            console.log('reset-list')
+            const lista = document.getElementById("listaNomi");
+            lista.innerHTML = "";
+        });
 
     </script>
 </body>
